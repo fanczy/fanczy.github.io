@@ -6,7 +6,7 @@ export const UNIVERSAL_CAMERA_ID = "universalCamera";
 export const createUniversalCamera = () => {
     const mainCamera = new BABYLON.UniversalCamera(
         UNIVERSAL_CAMERA_ID,
-        new BABYLON.Vector3(0,0,0),
+        new BABYLON.Vector3(0,100,200),
         mainScene
     )
     
