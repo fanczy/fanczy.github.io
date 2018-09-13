@@ -9,3 +9,5 @@ setupProcedure();
 mainEngine.runRenderLoop(() => {
     mainScene.render();
 });
+
+document.getElementById("main-canvas").focus();
