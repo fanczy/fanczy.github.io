@@ -10,7 +10,9 @@ export const createFollowCamera = () => {
     
     followCamera.radius = 100;
     followCamera.heightOffset = 0;
-    followCamera.rotationOffset = 0;
+    //followCamera.rotationOffset = Math.PI / 2;
     followCamera.cameraAcceleration = 0.05;
     followCamera.attachControl(mainCanvas, true);
+
+    return followCamera;
 }
