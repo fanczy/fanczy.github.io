@@ -1,12 +1,24 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+#canvas-div {
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
 #main-canvas {
     width: 100%;
     height: 100%;
 }
 
-#controls-div {
+#header, #footer {
     color: red;
     border: 2px solid red;
     text-align: center;
     background: black;
-    z-index: 999;
 }
