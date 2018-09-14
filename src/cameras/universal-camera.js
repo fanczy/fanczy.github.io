@@ -4,13 +4,12 @@ import mainScene from '../scenes/main-scene.js'
 export const UNIVERSAL_CAMERA_ID = "universalCamera";
 
 export const createUniversalCamera = () => {
-    const mainCamera = new BABYLON.UniversalCamera(
+    const universalCamera = new BABYLON.UniversalCamera(
         UNIVERSAL_CAMERA_ID,
-        new BABYLON.Vector3(0,100,200),
+        new BABYLON.Vector3(0,0,0),
         mainScene
     )
     
-    mainCamera.setTarget(BABYLON.Vector3.Zero());
-    mainCamera.attachControl(mainCanvas, true);
+    return universalCamera;
 }
 
