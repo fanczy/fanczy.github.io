@@ -5,7 +5,7 @@ import { pointerCenterOffsetX, pointerCenterOffsetY} from '../helpers/pointer-li
 import { limitNumber } from '../helpers/number-helper.js'
 
 const rotationSpeed = 0.03;
-const motorAcceleration = 0.1;
+const motorAcceleration = 0.05;
 let currentAcceleration = new BABYLON.Vector3(0,0,0);
 
 export const setupControls = () => {
