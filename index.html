@@ -11,13 +11,32 @@
     </head>
     <body>
         <div id="header">
-            Rotational motors: W A S D Q E ||| 
-            Direcional motors: I K J L U O ||| 
-            Intelligent space break: SPACE 
+            Press ESC to see controls. 
         </div>        
         <div id="canvas-div">
             <canvas id="main-canvas"/>
         </div>
-        <div id="footer">BabylonJS LAB</div>
+        <div id="footer">
+            <span id="diff"></span><span id="distance"></span><span id="camera"></span>
+        </div>
+        <div id="overlay">
+           <span>
+                <b>Controls:</b> <br/>
+                Mouse - pitch/roll <br/>
+                Q,E - yaw left/right<br/>
+                W,S - accelerate forward/backwards<br/>
+                A,D - accelerate left/right<br/>
+                R,F - accelerate up/down<br/>
+            </span><br>
+            <span>
+                <b>WARNING!!</b><br>
+                <u>Maneuvering in space is tricky, you keep moving in one direction until you accelerate in opposite direction.</u>
+                <br><i style="font-size:15px">Well... unless you use intelligent SPACE break.</i>
+            </span>
+            <br/><br/>
+            <span>
+               <b>Click to proceed at own risk ☠</b>
+            </span>
+        </div>
     </body>
 </html>

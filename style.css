@@ -3,6 +3,11 @@ body, html {
     height: 100%;
     display:flex;
     flex-direction: column;
+    /* cursor: url("src/assets/circle.png") 32 32, auto */
+    cursor: none;
+    text-align: center;
+    color: red;
+    background: black;
 }
 
 #canvas-div {
@@ -17,8 +22,18 @@ body, html {
 }
 
 #header, #footer {
-    color: red;
     border: 2px solid red;
-    text-align: center;
-    background: black;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    font-size: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

@@ -12,11 +12,6 @@ export const setupMainScene = () => {
     createBox("blueBox", 50, new BABYLON.Vector3(0,0,0) , greenWireFrame);
     ship = createShip("ship", 5, new BABYLON.Vector3(0, 100, 0), redWireFrame);
 
-    const guiTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
-
-    const crosshair = new BABYLON.GUI.Image("crosshair", "src/assets/crosshair.png");
-    crosshair.autoScale = true;
-    guiTexture.addControl(crosshair);    
     
     console.log("main scene set up")
 }
